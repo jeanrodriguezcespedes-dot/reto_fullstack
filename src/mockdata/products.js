@@ -2,18 +2,18 @@
 export const products = [
   {
     id: 1,
-    name: "Cámara Réflex Profesional",
-    price: 1200,
-    category: "Electrónica",
-    image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-    description: "Cámara de alta resolución para fotografía profesional."
+    name: "Organizador de Cables Pro",
+    price: 35000,
+    category: "Utilidad",
+    image: "https://images.unsplash.com/photo-1555854817-2b226021d25c?q=80&w=500",
+    description: "La solución definitiva para un escritorio sobrio y ordenado."
   },
   {
     id: 2,
-    name: "Zapatillas Deportivas",
-    price: 85,
-    category: "Ropa",
-    image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-    description: "Comodidad y estilo para tus entrenamientos diarios."
+    name: "Lámpara LED Minimalista",
+    price: 95000,
+    category: "Hogar",
+    image: "https://images.unsplash.com/photo-1534073828943-f801091bb18c?q=80&w=500",
+    description: "Iluminación moderna y funcional para tus espacios de trabajo."
   }
 ];
