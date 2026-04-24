@@ -2,6 +2,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart"; // Importamos el componente real que creaste
+import Checkout from "./pages/Checkout";
+// ... dentro de Routes
+<Route path="/checkout" element={<Checkout />} />
 
 function App() {
   return (
