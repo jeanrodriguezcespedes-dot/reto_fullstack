@@ -35,9 +35,17 @@ const Home = () => {
         <ProductGrid />
       </main>
       
-      {/* Footer simple para completar la estructura */}
-      <footer className="bg-rougeBlack text-white py-10 text-center font-body text-[10px] tracking-widest uppercase">
-        © 2024 Rouge Accesorios y Detalles - Estilo y Utilidad
+      {/* Footer */}
+      <footer className="bg-rougeBlack text-white py-12 text-center">
+        <h3 className="font-title text-xl tracking-widest uppercase mb-4">
+          Rouge Accesorios y Detalles
+        </h3>
+        <div className="font-body text-xs text-white/70 space-y-1">
+          <p>Creado por: Jean Christian Rodríguez Céspedes</p>
+          <p>Proyecto Final</p>
+          <p>Curso Desarrollo Web FullStack React</p>
+          <p className="text-white/50 mt-2">2026</p>
+        </div>
       </footer>
     </div>
   );
