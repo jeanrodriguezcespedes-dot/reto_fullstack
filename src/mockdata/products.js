@@ -5,13 +5,13 @@ export const products = [
     name: "Organizador de Cables Pro",
     price: 35000,
     category: "Electronicos",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=500",
     description: "La solución definitiva para un escritorio sobrio y ordenado. Compartimentos ajustables para cables de todos los tamaños.",
     colors: ["Negro", "Gris", "Blanco"],
     gallery: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=500",
-      "https://images.unsplash.com/photo-1587829741301-dc798b91a603?q=80&w=500",
-      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=500"
+      "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=500",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=500"
     ]
   },
   {
