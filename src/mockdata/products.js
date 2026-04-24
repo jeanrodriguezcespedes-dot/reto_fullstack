@@ -5,13 +5,13 @@ export const products = [
     name: "Organizador de Cables Pro",
     price: 35000,
     category: "Electronicos",
-    image: "https://images.unsplash.com/photo-1555854817-2b226021d25c?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=500",
     description: "La solución definitiva para un escritorio sobrio y ordenado. Compartimentos ajustables para cables de todos los tamaños.",
     colors: ["Negro", "Gris", "Blanco"],
     gallery: [
-      "https://images.unsplash.com/photo-1555854817-2b226021d25c?q=80&w=500",
-      "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?q=80&w=500",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=500"
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=500",
+      "https://images.unsplash.com/photo-1587829741301-dc798b91a603?q=80&w=500",
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=500"
     ]
   },
   {
@@ -19,11 +19,11 @@ export const products = [
     name: "Lámpara LED Minimalista",
     price: 95000,
     category: "Hogar",
-    image: "https://images.unsplash.com/photo-1534073828943-f801091bb18c?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=500",
     description: "Iluminación moderna y funcional para tus espacios de trabajo. Intensidad regulable con diseño escandinavo.",
     colors: ["Negro", "Dorado", "Blanco"],
     gallery: [
-      "https://images.unsplash.com/photo-1534073828943-f801091bb18c?q=80&w=500",
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=500",
       "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=500",
       "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=500"
     ]
@@ -47,13 +47,13 @@ export const products = [
     name: "Depilador",
     price: 85000,
     category: "Belleza",
-    image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500",
     description: "Depilación suave y eficiente en casa. Cabezal exfoliante incluido para una piel radiante.",
     colors: ["Blanco", "Lila"],
     gallery: [
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=500",
       "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500",
-      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=500"
+      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=500",
+      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=500"
     ]
   },
   {
@@ -61,13 +61,13 @@ export const products = [
     name: "Humidificador de Ambiente",
     price: 78000,
     category: "Hogar",
-    image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500",
     description: "Aire fresco y purificado para tu hogar. Silencioso, ideal para dormitorios y oficinas.",
     colors: ["Blanco", "Gris", "Verde Salvia"],
     gallery: [
-      "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?q=80&w=500",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500",
       "https://images.unsplash.com/photo-1616627561839-074385245ff6?q=80&w=500",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500"
+      "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?q=80&w=500"
     ]
   },
   {
@@ -75,13 +75,13 @@ export const products = [
     name: "Lámpara de Mesa",
     price: 65000,
     category: "Hogar",
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=500",
     description: "Elegancia y calidez para cualquier rincón. Base de mármol y pantalla de lino natural.",
     colors: ["Beige", "Gris Oscuro", "Blanco Roto"],
     gallery: [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=500",
       "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=500",
-      "https://images.unsplash.com/photo-1540932296774-3ed6d23f9b58?q=80&w=500"
+      "https://images.unsplash.com/photo-1540932296774-3ed6d23f9b58?q=80&w=500",
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=500"
     ]
   },
   {
@@ -89,13 +89,13 @@ export const products = [
     name: "Gramera",
     price: 45000,
     category: "Cocina",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=500",
+    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500",
     description: "Molienda precisa para tus recetas favoritas. Cuchillas de acero inoxidable de alta resistencia.",
     colors: ["Negro", "Rojo", "Plata"],
     gallery: [
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500",
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=500",
-      "https://images.unsplash.com/photo-1584269600519-112d071b35e6?q=80&w=500",
-      "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?q=80&w=500"
+      "https://images.unsplash.com/photo-1584269600519-112d071b35e6?q=80&w=500"
     ]
   },
   {
