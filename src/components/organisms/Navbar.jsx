@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useCartStore } from "../../store/cartStore";
 import { products } from "../../mockdata/products";
 
@@ -7,9 +8,19 @@ const categories = ["Belleza", "Electronicos", "Hogar", "Cocina"];
 const Navbar = () => {
   const cart = useCartStore((state) => state.cart);
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const getProductsByCategory = (category) =>
     products.filter((p) => p.category === category);
+
+  const searchResults = searchQuery.trim()
+    ? products.filter(
+        (p) =>
+          p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          p.category.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : [];
 
   return (
     <nav className="bg-white border-b border-gray-100 py-4 px-8 sticky top-0 z-50">
@@ -71,9 +82,66 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-6 text-rougeBlack">
-          <button className="text-lg hover:text-rougeRed transition-colors">
-            🔍
-          </button>
+          {/* Búsqueda */}
+          <div className="relative">
+            <button
+              onClick={() => setSearchOpen(!searchOpen)}
+              className="text-lg hover:text-rougeRed transition-colors"
+            >
+              🔍
+            </button>
+
+            {searchOpen && (
+              <div className="absolute right-0 top-full mt-4 w-80 bg-white border border-gray-100 shadow-xl z-50">
+                <div className="p-4">
+                  <input
+                    type="text"
+                    placeholder="Buscar productos o categorías..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    autoFocus
+                    className="w-full border-b border-gray-200 py-2 text-sm font-body focus:border-rougeRed outline-none transition-colors"
+                  />
+
+                  {searchQuery.trim() && (
+                    <div className="mt-4 space-y-3 max-h-72 overflow-y-auto">
+                      {searchResults.length > 0 ? (
+                        searchResults.map((product) => (
+                          <Link
+                            key={product.id}
+                            to="/"
+                            onClick={() => {
+                              setSearchOpen(false);
+                              setSearchQuery("");
+                            }}
+                            className="flex items-center space-x-3 group/item"
+                          >
+                            <img
+                              src={product.image}
+                              alt={product.name}
+                              className="w-12 h-12 object-cover border border-gray-100"
+                            />
+                            <div>
+                              <p className="font-body text-xs text-rougeBlack group-hover/item:text-rougeRed transition-colors leading-tight">
+                                {product.name}
+                              </p>
+                              <p className="font-body text-[10px] text-gray-400 mt-0.5">
+                                {product.category} · ${product.price.toLocaleString("es-CO")}
+                              </p>
+                            </div>
+                          </Link>
+                        ))
+                      ) : (
+                        <p className="text-xs text-gray-400 text-center py-4">
+                          No se encontraron resultados
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* Carrito que lleva a la página /cart */}
           <Link
