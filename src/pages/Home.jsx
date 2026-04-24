@@ -7,12 +7,29 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <main>
-        {/* Banner de Bienvenida (Opcional pero recomendado para Rouge) */}
-        <div className="bg-gray-50 py-16 px-8 text-center border-b border-gray-100">
-          <p className="font-body text-xs uppercase tracking-[0.5em] text-gray-400 mb-4">Bienvenido a Rouge</p>
-          <h2 className="font-title text-4xl md:text-5xl text-rougeBlack max-w-2xl mx-auto leading-tight">
-            Soluciones útiles con un estilo <span className="text-rougeRed">sobrio y moderno</span>.
-          </h2>
+        {/* Banner de Bienvenida con imagen de fondo */}
+        <div
+          className="relative py-24 px-8 text-center bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600')",
+          }}
+        >
+          {/* Capa oscura para legibilidad del texto */}
+          <div className="absolute inset-0 bg-rougeBlack/70" />
+
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <p className="font-body text-xs uppercase tracking-[0.5em] text-white/70 mb-4">
+              Bienvenido a Rouge
+            </p>
+            <h2 className="font-title text-4xl md:text-5xl text-white max-w-2xl mx-auto leading-tight drop-shadow-lg">
+              Soluciones útiles con un estilo{" "}
+              <span className="text-rougeRed">sobrio y moderno</span>.
+            </h2>
+            <p className="font-body text-sm text-white/80 mt-6 max-w-lg mx-auto">
+              Belleza, electrónica, hogar y cocina — todo en un solo lugar.
+            </p>
+          </div>
         </div>
 
         <ProductGrid />
