@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useCartStore } from "../../store/cartStore";
+import { useAuthStore } from "../../store/authStore";
 import { products } from "../../mockdata/products";
 
 const categories = ["Belleza", "Electronicos", "Hogar", "Cocina"];
@@ -8,6 +9,7 @@ const categories = ["Belleza", "Electronicos", "Hogar", "Cocina"];
 const Navbar = () => {
   const cart = useCartStore((state) => state.cart);
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+  const { user, isAuthenticated, logout } = useAuthStore();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -155,6 +157,28 @@ const Navbar = () => {
               </span>
             )}
           </Link>
+
+          {/* Autenticación */}
+          {isAuthenticated ? (
+            <div className="flex items-center space-x-3">
+              <span className="text-xs font-body text-gray-500 uppercase tracking-widest hidden md:inline">
+                Hola, {user?.name}
+              </span>
+              <button
+                onClick={logout}
+                className="text-xs font-body uppercase tracking-widest text-rougeRed hover:text-rougeBlack transition-colors"
+              >
+                Salir
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="text-xs font-body uppercase tracking-widest text-gray-500 hover:text-rougeRed transition-colors"
+            >
+              Ingresar
+            </Link>
+          )}
         </div>
       </div>
     </nav>
