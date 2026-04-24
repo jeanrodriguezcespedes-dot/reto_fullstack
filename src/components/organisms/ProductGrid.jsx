@@ -1,9 +1,13 @@
 // src/components/organisms/ProductGrid.jsx
+import { useState } from "react";
 import ProductCard from "../molecules/ProductCard";
+import ProductModal from "../molecules/ProductModal";
 import { products } from "../../mockdata/products";
 import { motion } from "framer-motion";
 
 const ProductGrid = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   return (
     <section className="max-w-7xl mx-auto px-8 py-12">
       {/* Título de la sección con Playfair Display */}
@@ -20,10 +24,17 @@ const ProductGrid = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <ProductCard product={product} />
+            <ProductCard product={product} onSelect={setSelectedProduct} />
           </motion.div>
         ))}
       </div>
+
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
+      )}
     </section>
   );
 };
