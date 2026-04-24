@@ -57,6 +57,7 @@ const ProductModal = ({ product, onClose }) => {
               <img
                 src={product.gallery[selectedImage]}
                 alt={product.name}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -74,6 +75,7 @@ const ProductModal = ({ product, onClose }) => {
                   <img
                     src={img}
                     alt={`${product.name} ${index + 1}`}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </button>
