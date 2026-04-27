@@ -1,16 +1,93 @@
-# React + Vite
+🌐 Proyecto Final – Desarrollo Web Full Stack + React
+🌐 Final Project – Full Stack Web Development + React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Descripción del proyecto | Project Description (ES)
 
-Currently, two official plugins are available:
+Este proyecto corresponde al proyecto final del curso Desarrollo Web Full Stack + React.
+El objetivo principal es aplicar los conocimientos adquiridos en el desarrollo de interfaces modernas, componentes reutilizables y buenas prácticas en React, utilizando Vite como herramienta de construcción para un entorno de desarrollo rápido y eficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación está estructurada bajo un enfoque modular, priorizando la legibilidad del código, la escalabilidad y una experiencia de usuario fluida.
 
-## React Compiler
+📌 Project Description (EN)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is the final project of the Full Stack Web Development + React course.
+Its main goal is to apply the acquired knowledge in building modern user interfaces, reusable components, and React best practices, using Vite as a build tool for a fast and efficient development environment.
 
-## Expanding the ESLint configuration
+The application follows a modular structure, prioritizing code readability, scalability, and a smooth user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tecnologías utilizadas | Technologies Used
+Frontend
+React
+Vite
+JavaScript (ES6+)
+HTML5
+CSS3
+Herramientas y configuración
+ESLint
+HMR (Hot Module Replacement)
+Git & GitHub
+⚙️ Instalación y ejecución | Installation & Setup
+Español 🇪🇸
+
+Clona este repositorio:
+
+git clone https://github.com/jeanrodriguezcespedes-dot/reto_fullstack.git
+
+Ingresa al directorio del proyecto:
+
+cd reto_fullstack
+
+Instala las dependencias:
+
+npm install
+
+Ejecuta el proyecto en modo desarrollo:
+
+npm run dev
+English 🇺🇸
+
+Clone this repository:
+
+git clone https://github.com/jeanrodriguezcespedes-dot/reto_fullstack.git
+
+Go to the project directory:
+
+cd reto_fullstack
+
+Install dependencies:
+
+npm install
+
+Run the project in development mode:
+
+npm run dev
+📂 Estructura del proyecto | Project Structure
+src/
+├── components/
+├── pages/
+├── assets/
+├── styles/
+├── App.jsx
+└── main.jsx
+
+La estructura puede variar según la evolución del proyecto.
+
+🚧 Estado del proyecto | Project Status
+
+🟡 En desarrollo / In progress
+
+El proyecto cumple con los objetivos académicos del curso, pero puede seguir evolucionando con mejoras visuales, optimización de rendimiento y nuevas funcionalidades.
+
+👤 Autor | Author
+
+Jean Christian Rodríguez
+Estudiante de Análisis y Desarrollo de Software
+Desarrollo Web | React | Full Stack Junior
+
+📧 Contacto: jean.rodriguez.cespedes@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/jean-christian-rodriguez-cespedes/
+
+📄 Licencia | License
+
+Este proyecto se desarrolla con fines académicos y educativos.
+Puede ser reutilizado como referencia personal o de aprendizaje.
